@@ -1,0 +1,41 @@
+<!--
+
+./mkn.xml
+
+Created on: 8 Mar 2015
+
+Copyright (c) 2013, Philip Deegan
+
+This file is part of Nvidia NvUI
+
+See ./license.txt
+-->
+<?xml version="1.0" encoding="UTF-8" ?>
+<maiken>
+	<project>
+		<name>gl.gl</name>
+		<version>master</version>
+	</project>
+	<profiles>
+		<profile name="c">
+			<includes>
+				<include>./inc</include>
+			</includes>
+		</profile>
+		<profile name="bsd" parent="c" os="bsd">
+			<libraries>
+				<library>GL</library>
+			</libraries>
+		</profile>
+		<profile name="nix" parent="c" os="nix">
+			<libraries>
+				<library>GL</library>
+			</libraries>
+		</profile>
+		<profile name="win" parent="c" os="win">
+			<libraries>
+				<library>opengl32</library>
+			</libraries>
+		</profile>
+	</profiles>
+</maiken>
