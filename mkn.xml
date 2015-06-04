@@ -12,9 +12,14 @@ See ./license.txt
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
 <maiken>
+	<properties>
+		<github>http://www.github.com/Dekken</github>
+		<git>${github}/gl.gl.git</git>
+	</properties>
 	<project>
 		<name>gl.gl</name>
 		<version>master</version>
+		<scr scm="git">${git}</scr>
 	</project>
 	<profiles>
 		<profile name="c">
