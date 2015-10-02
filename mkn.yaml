@@ -1,0 +1,26 @@
+
+
+name: gl.gl
+version: master
+properties:
+    github: http://www.github.com/Dekken
+scm:
+    type: git
+    remote: ${github}/gl.gl.git
+
+profiles:
+  - name: c
+    include: ./inc
+  - name: nixish
+    parent: c
+    library: GL
+  - name: bsd
+    parent: nixish
+    os: bsd
+  - name: nix
+    parent: nixish
+    os: nix
+  - name: win
+    os: win
+    parent: c
+    library: opengl32
