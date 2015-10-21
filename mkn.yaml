@@ -2,11 +2,8 @@
 
 name: gl.gl
 version: master
-properties:
-    github: http://www.github.com/Dekken
-scm:
-    type: git
-    remote: ${github}/gl.gl.git
+
+scm: http://www.github.com/rant/khronos.OpenGL.git
 
 profiles:
   - name: c
