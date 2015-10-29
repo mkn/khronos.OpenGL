@@ -3,8 +3,6 @@
 name: khronos.OpenGL
 version: master
 
-scm: http://www.github.com/mkn/khronos.OpenGL.git
-
 profiles:
   - name: c
     include: ./inc
