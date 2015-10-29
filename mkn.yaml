@@ -1,9 +1,9 @@
 
 
-name: gl.gl
+name: khronos.OpenGL
 version: master
 
-scm: http://www.github.com/rant/khronos.OpenGL.git
+scm: http://www.github.com/mkn/khronos.OpenGL.git
 
 profiles:
   - name: c
