@@ -1,9 +1,8 @@
 
 
-name: gl.gl
+name: khronos.OpenGL
 version: master
 
-scm: http://www.github.com/rant/khronos.OpenGL.git
 inc: ./inc
 if_lib:
     bsd: GL
