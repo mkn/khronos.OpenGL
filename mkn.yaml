@@ -4,20 +4,8 @@ name: gl.gl
 version: master
 
 scm: http://www.github.com/rant/khronos.OpenGL.git
-
-profiles:
-  - name: c
-    include: ./inc
-  - name: nixish
-    parent: c
-    library: GL
-  - name: bsd
-    parent: nixish
-    os: bsd
-  - name: nix
-    parent: nixish
-    os: nix
-  - name: win
-    os: win
-    parent: c
-    library: opengl32
+inc: ./inc
+if_lib:
+    bsd: GL
+    nix: GL
+    win: opengl32
