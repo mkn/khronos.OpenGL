@@ -1,9 +1,9 @@
 
 
-name: khronos.OpenGL
+name: gl.gl
 version: master
 
-inc: ./inc
+inc: inc
 if_lib:
     bsd: GL
     nix: GL
